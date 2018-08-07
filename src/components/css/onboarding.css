@@ -1,0 +1,40 @@
+.onboarding-content {
+  width: 100%;
+  background-color: white;
+}
+
+.onboarding-content h2 {
+  text-align: center;
+  margin: 0px;
+  padding: 10px 0px 10px 0px;
+  background-color: #ba7200;
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+.onboarding-content p {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .onboarding-content {
+    width: 50%;
+    margin: 0 auto;
+    background-color: white;
+  }
+  
+  .onboarding-content h2 {
+    text-align: center;
+    margin: 0px;
+    padding: 10px 0px 10px 0px;
+    background-color: #ba7200;
+    color: white;
+    border-bottom: 1px solid white;
+  }
+  
+  .onboarding-content p {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}

@@ -5,6 +5,8 @@ import store from './store';
 import UserCreation from './components/user-creation-form';
 import UserLogin from './components/user-login-form';
 import Onboarding from './components/onboarding';
+import UserControls from './components/user-controls';
+import StudentList from './components/StudentList';
 
 import './App.css';
 
@@ -16,13 +18,20 @@ class App extends Component {
       <Provider store={store}>
         <div className="App">
           <header className="App-header" role="banner">
+            <img src="https://media.istockphoto.com/photos/gymnasium-at-middle-school-picture-id178377389?k=6&m=178377389&s=612x612&w=0&h=XcDFMubuq0nkUcxUkwd6kcWxDEDyMu_E5EtIlPo7KPM=" alt="gym" />
             <h1>Physical Education Class Manager</h1>
           </header>
           <Router>
             <main role="main">
-              <Route exact path="/" component={UserCreation} />
-              <Route exact path="/" component={UserLogin} />
-              <Route exact path="/" component={Onboarding}/>
+              <div className="landing-page">
+                <div className="form-container">
+                  <Route exact path="/" component={UserCreation} />
+                  <Route exact path="/" component={UserLogin} />
+                </div>
+                <Route exact path="/" component={Onboarding}/>
+              </div>
+                <Route exact path="/UserControls" component={UserControls} />
+                <Route exact path="/UserControls" component={StudentList} />
             </main>
           </Router>
         </div>

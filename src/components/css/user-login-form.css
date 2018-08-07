@@ -1,0 +1,24 @@
+.user-login-form {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.user-login-form h2 {
+  margin: 0px;
+  padding: 5px;
+  text-align: center;
+  background-color: #003c42;
+  color: white;
+}
+
+.user-login-form button {
+  width: 100%;
+  padding: 5px;
+  margin-top: 10px;
+  background-color: #003c42;
+  color: white;
+  border-radius: 5px;
+}

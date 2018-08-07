@@ -1,7 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import './css/student.css';
-// import './css/studentrow.css';
 import avatar from './css/avatar.png';
 
 import { assignPeriodToStudent, deleteStudent, deletePeriodFromStudent } from '../actions/students';
@@ -50,7 +49,6 @@ class StudentList extends React.Component {
             <div className="image-container">
               <div className="student-info">
                 <h2>{student.firstname} {student.lastname}</h2>
-                {/* <h3>STUDENT ID: {student.id}</h3> */}
               </div>
               <img role="presentation" src={avatar} alt="avatarIcon" className="avatar-img" />
             </div>

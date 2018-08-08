@@ -15,6 +15,7 @@
   display: flex;
   justify-content: space-around;
   width: 98%;
+  margin: 0 auto;
   margin-bottom: 10px;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
@@ -126,6 +127,7 @@
     display: flex;
     justify-content: space-around;
     width: 98%;
+    margin: 0 auto;
     margin-bottom: 10px;
     border-top: 1px solid black;
     border-bottom: 1px solid black;

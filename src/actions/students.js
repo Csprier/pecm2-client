@@ -1,6 +1,6 @@
 import { API_BASE_URL } from '../config';
 
-// ===== GET/LIST ALL STUDENTS ACTION AND THUNK ==========================================
+// ===== GET/LIST ALL STUDENTS ACTION AND THUNK ===================
 export const GET_ALL_STUDENTS = 'GET_ALL_STUDENTS';
 export const getAllStudents = (students) => ({
   type: GET_ALL_STUDENTS,

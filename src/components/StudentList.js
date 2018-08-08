@@ -35,7 +35,7 @@ class StudentList extends React.Component {
     let filteredStudents = studentList.filter(student => student.periods.includes(this.props.filter));
     let listOfStudentsToBeRendered = this.props.students;
 
-    if (this.props.filter === undefined || this.props.filter === 'SELECT PERIOD') {
+    if (this.props.filter === undefined || this.props.filter === 'FILTER PERIOD') {
       listOfStudentsToBeRendered = studentList;
     } else if (this.props.filter !== null) {
       listOfStudentsToBeRendered = filteredStudents;

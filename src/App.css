@@ -65,7 +65,7 @@
   }
 
   .App-header img {
-    position: absolute;
+    position: fixed;
     margin: 0px;
     width: 100%;
     top: 0px;

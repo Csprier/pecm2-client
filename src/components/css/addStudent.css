@@ -4,3 +4,17 @@
   color: white;
   border-radius: 5px;
 }
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.modal-button {
+  width: 100%;
+}
+
+.close-modal-button {
+  width: 10%;
+}

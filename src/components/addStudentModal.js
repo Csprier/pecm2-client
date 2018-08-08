@@ -12,7 +12,7 @@ class AddStudentModal extends React.Component {
   render() {
     return(
       <div className="modal">
-        <button className="close-modal-btn" name="close-modal-button" type="button" onClick={() => this.onClick()}>X</button>
+        <button className="close-modal-btn" name="close-modal-button" type="button" onClick={() => this.onClick()}>Cancel</button>
         <form onSubmit={this.props.handleSubmit(values => {
             this.props.dispatch(createStudent(values.firstname, values.lastname))
             .then(() => this.props.dispatch(listAllStudents()))

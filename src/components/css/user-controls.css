@@ -4,7 +4,6 @@
   width: 100%;
   margin: 0 auto;
   z-index: 0;
-  /* background-color: #ba7200; */
 }
 
 .teacher-controls {
@@ -26,4 +25,14 @@
   background-color: #003c42;
   color: white;
   border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .app-container {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    margin: 0 auto;
+    z-index: 0;
+  }
 }

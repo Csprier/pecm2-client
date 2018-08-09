@@ -29,5 +29,5 @@ redux-thunk
 http://pecm.surge.sh
 
 Demo account: 
-Username: testuser
-password: password
+- Username: testuser
+- password: password

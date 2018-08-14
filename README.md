@@ -18,12 +18,12 @@ This is a tool teachers can use on their mobile devices, or desktops, to help or
 
 
 ## This client uses:
-react
-redux
-react-router-dom
-react-scripts
-redux-form
-redux-thunk
+- react
+- redux
+- react-router-dom
+- react-scripts
+- redux-form
+- redux-thunk
 
 ### Deployed version:
 http://pecm.surge.sh

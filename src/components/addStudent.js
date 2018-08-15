@@ -23,7 +23,8 @@ class AddStudentToDatabase extends React.Component {
 }
 
 const mapStateToProps = state => ({
-  modalView: state.user.modalView
+  modalView: state.user.modalView,
+  loginFail: state.user.error
 })
 
 export default connect(mapStateToProps)(AddStudentToDatabase);

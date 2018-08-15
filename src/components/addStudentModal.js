@@ -1,8 +1,8 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import { reduxForm, Field } from 'redux-form';
 import { toggleCreateStudentModal, createStudent } from '../actions/users';
 import { listAllStudents, getAllPeriods } from '../actions/students';
-// import './css/addStudentModal.css';
 
 class AddStudentModal extends React.Component {
   onClick() {
@@ -63,6 +63,10 @@ class AddStudentModal extends React.Component {
   }
 }
 
-export default reduxForm({
+const mapStateToProps = state => ({
+  loginFail: state.user.error
+})
+
+export default connect(mapStateToProps)(reduxForm({
   form: 'studentCreation'
-})(AddStudentModal);
+})(AddStudentModal));

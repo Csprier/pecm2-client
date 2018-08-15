@@ -106,7 +106,7 @@ export const createStudent = (firstname, lastname) => dispatch => {
     },
     body: JSON.stringify(student)
   })
-  .then(res => res.json())
+  // .then(res => res.json())
   .then(() => dispatch(createStudentSuccess(student)))
   .catch(err => console.error(err))
 }

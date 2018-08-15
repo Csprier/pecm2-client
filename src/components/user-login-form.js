@@ -36,6 +36,7 @@ export class UserLogin extends React.Component {
           <button name="submit-login" type="submit">LOG IN</button>
           {this.props.loginFail}
         </form>
+        <button name="demo-login" type="submit" title="login as demo user" onClick={() => this.props.dispatch(loginUserHandler(this.props.history, 'testuser', 'password'))}>DEMO</button>
       </div>
     );
   }

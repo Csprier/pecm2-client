@@ -14,6 +14,10 @@
   color: white;
 }
 
+.user-login-form input {
+  height: 28px;
+}
+
 .user-login-form button {
   width: 100%;
   padding: 5px;

@@ -1,13 +1,15 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { reduxForm, Field } from 'redux-form';
-import { toggleCreateStudentModal, createStudent } from '../actions/users';
+import { toggleCreateStudentModal, createStudent, createStudentFailure } from '../actions/users';
 import { listAllStudents, getAllPeriods } from '../actions/students';
+
+import {required, nonEmpty} from '../validators';
 
 class AddStudentModal extends React.Component {
   onClick() {
     this.props.dispatch(toggleCreateStudentModal());
-  }
+  }  
 
   render() {
     return(
@@ -32,6 +34,7 @@ class AddStudentModal extends React.Component {
                     id="firstname" 
                     type="text" 
                     component="input" 
+                    validate={[required, nonEmpty]}
                   />
                 </td>
               </tr>
@@ -47,6 +50,7 @@ class AddStudentModal extends React.Component {
                     id="lastname" 
                     type="text" 
                     component="input"
+                    validate={[required, nonEmpty]}
                     />
                 </td>
               </tr>
@@ -63,10 +67,7 @@ class AddStudentModal extends React.Component {
   }
 }
 
-const mapStateToProps = state => ({
-  loginFail: state.user.error
-})
-
-export default connect(mapStateToProps)(reduxForm({
-  form: 'studentCreation'
+export default connect()(reduxForm({
+  form: 'studentCreation',
+  onSubmitFail: (error, dispatch) => dispatch(createStudentFailure(error))
 })(AddStudentModal));

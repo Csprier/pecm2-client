@@ -11,10 +11,20 @@
   color: white;
 }
 
+.modal input {
+  height: 28px;
+}
+
 .modal-button {
   width: 100%;
+  color: black;
+  background-color: white;
+  border: 1px solid black;
 }
 
 .close-modal-button {
   width: 10%;
+  color: black;
+  background-color: white;
+  border: 1px solid black;
 }

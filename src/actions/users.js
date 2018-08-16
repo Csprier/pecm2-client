@@ -110,3 +110,9 @@ export const createStudent = (firstname, lastname) => dispatch => {
   .then(() => dispatch(createStudentSuccess(student)))
   .catch(err => console.error(err))
 }
+
+export const CREATE_STUDENT_FAILURE = 'CREATE_STUDENT_FAILURE';
+export const createStudentFailure = (error) => ({
+  type: CREATE_STUDENT_FAILURE,
+  error
+})

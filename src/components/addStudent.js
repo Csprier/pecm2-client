@@ -17,6 +17,11 @@ class AddStudentToDatabase extends React.Component {
           ? <AddStudentModal /> 
           : <button className="create-student-btn" id="create-student-modal" onClick={() => this.onClick()}>ADD STUDENT</button>
         }
+        {
+          (this.props.error) 
+          ? <span>{this.props.error.lastname || this.props.error.firstname}</span>
+          : undefined
+        }
       </div>
     );
   }
@@ -24,7 +29,7 @@ class AddStudentToDatabase extends React.Component {
 
 const mapStateToProps = state => ({
   modalView: state.user.modalView,
-  loginFail: state.user.error
+  error: state.user.error
 })
 
 export default connect(mapStateToProps)(AddStudentToDatabase);

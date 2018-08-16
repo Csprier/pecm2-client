@@ -1,6 +1,6 @@
 # Welcome to PECM! (Physical Education Class Manager)
 
-This is a tool teachers can use on their mobile devices, or desktops, to help organize daily class scheduling. 
+This is a tool teachers can use on their mobile devices, or desktops, to help organize daily class scheduling. This allows a teacher to add the list of students to the database. From there, they can assign them to a period(a time frame which represents a class that will be taught). They have the option to filter by a specific period to see who is in that class!
 
 
 ## Create an account, or login! If you create an account, you will be automatically logged in on submission!
